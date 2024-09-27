@@ -1,4 +1,7 @@
 body {
+    #head{
+        color: darkgreen;
+    }
     h1{
         color:brown;
         text-align: center;
