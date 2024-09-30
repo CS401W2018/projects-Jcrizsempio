@@ -2,7 +2,7 @@ body{
     background-color: cadetblue;
     header{
         h1 {
-            font-family: cursive;
+            font-family:'Courier New', Courier, monospace;
         }
     }
 }
