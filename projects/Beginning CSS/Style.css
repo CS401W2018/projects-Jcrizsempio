@@ -14,13 +14,13 @@ main {
 }
 
 /* Emphasize important text using a class selector */
-.important-text {
+.important {
     color: #001f3f; /* Emphasize with dark blue */
     font-weight: bold;
 }
 
 /* De-emphasize text using a class selector */
-.less-emphasized {
+.less{
     color: #AAAAAA; /* Muted grey */
     font-style: italic;
 }
