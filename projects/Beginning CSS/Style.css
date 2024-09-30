@@ -1,42 +1,41 @@
-/* Styling the header with an ID */
 body{
     background-color: cadetblue;
 #head {
-    color: #001f3f; /* Dark blue for emphasis */
+    color: #001f3f; 
     font-size: 3rem;
     text-align: center;
     background-color: #f0f0f0;
     padding: 10px;
 }
 
-/* Styling for the main content */
+
 main {
     font-family: Arial, sans-serif;
     margin: 20px;
 }
 
-/* Emphasize important text using a class selector */
+
 .important {
-    color: #001f3f; /* Emphasize with dark blue */
+    color: #001f3f; 
     font-weight: bold;
 }
 
-/* De-emphasize text using a class selector */
+
 .less{
-    color: #AAAAAA; /* Muted grey */
+    color: #AAAAAA;
     font-style: italic;
 }
 
-/* Highlight specific text within a span tag */
+
 .highlight {
-    background-color: #FFDD57; /* Light yellow highlight for selected text */
+    background-color: #FFDD57; 
     padding: 2px;
 }
 
 /* Footer styling */
 footer {
     text-align: center;
-    color: #AAAAAA; /* De-emphasized grey */
+    color: #AAAAAA; 
     background-color: #f0f0f0;
     padding: 10px;
 }
