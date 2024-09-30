@@ -7,32 +7,22 @@ body{
     background-color: #f0f0f0;
     padding: 10px;
 }
-
-
 main {
     font-family: Arial, sans-serif;
     margin: 20px;
 }
-
-
 .important {
     color: #001f3f; 
     font-weight: bold;
 }
-
-
 .less{
     color: #AAAAAA;
     font-style: italic;
 }
-
-
 .highlight {
     background-color: #FFDD57; 
     padding: 2px;
 }
-
-/* Footer styling */
 footer {
     text-align: center;
     color: #AAAAAA; 
