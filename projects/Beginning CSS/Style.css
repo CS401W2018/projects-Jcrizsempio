@@ -1,5 +1,6 @@
 body{
     background-color: cadetblue;
+}
 #head {
     color: #001f3f; 
     font-size: 3rem;
@@ -28,5 +29,4 @@ footer {
     color: #AAAAAA; 
     background-color: #f0f0f0;
     padding: 10px;
-}
 }
