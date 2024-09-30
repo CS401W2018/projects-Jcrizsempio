@@ -1,4 +1,6 @@
 /* Styling the header with an ID */
+body{
+    background-color: cadetblue;
 #head {
     color: #001f3f; /* Dark blue for emphasis */
     font-size: 3rem;
@@ -37,4 +39,5 @@ footer {
     color: #AAAAAA; /* De-emphasized grey */
     background-color: #f0f0f0;
     padding: 10px;
+}
 }
