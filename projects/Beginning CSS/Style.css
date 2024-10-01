@@ -5,6 +5,8 @@ body{
     color:crimson; 
     font-size: 3rem;
     text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px;
 }
 main {
     font-family: Arial, sans-serif;
@@ -25,4 +27,6 @@ main {
 footer {
     text-align: center;
     color: #AAAAAA; 
+    background-color: #f0f0f0;
+    padding: 10px;
 }
