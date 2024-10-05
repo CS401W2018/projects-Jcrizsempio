@@ -40,7 +40,7 @@ nav ul li a.active {
 
 main {
     padding: 20px;
-    background: url('basketball bg.jpg') no-repeat left;
+    background-image: url('basketball bg.jpg') no-repeat left;
 }
 
 ul {
