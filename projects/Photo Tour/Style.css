@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4 url("basketball_bg.jpg") repeat; 
+    background-image: url("projects/Photo Tour/baketball_bg.jpg");
 }
 
 header {
