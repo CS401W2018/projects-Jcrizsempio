@@ -1,6 +1,6 @@
 
 body {
-    background-image: url("projects/Photo Tour/baketball_bg.jpg");
+    background-image: url("projects/Photo Tour/basketball_bg2.jpg");
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;   
@@ -39,7 +39,7 @@ nav ul li a.active {
 }
 
 main {
-    background-image: url('basketball_bg2.jpg');
+    background-image: url('basketball_bg.jpg');
     background-repeat: no-repeat;
     background-position: left;    
 }
