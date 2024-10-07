@@ -41,8 +41,7 @@ nav ul li a.active {
 main {
     background-image: url('rightlogo.png');
     background-repeat: no-repeat;
-    background-position: right;
-    padding-top: 10cm;    
+    background-position: right 50px;
 }
 
 ul {
