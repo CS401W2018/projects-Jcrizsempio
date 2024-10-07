@@ -64,7 +64,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    display: inline;
+    position:absolute;
     width: 100%;
     bottom: 0;
 }
