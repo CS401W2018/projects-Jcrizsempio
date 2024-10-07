@@ -27,7 +27,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: red;
+    color: white;
     text-decoration: none;
     padding: 10px 15px;
     display: inline-block;
@@ -43,6 +43,7 @@ main {
     background-repeat: no-repeat;
     background-position: right 50px;
     background-size: 100px 100px;
+    color: red;
 }
 
 ul {
