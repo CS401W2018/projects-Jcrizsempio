@@ -44,6 +44,7 @@ main {
     background-position: right 50px;
     background-size: 100px 100px;
     color: royalblue;
+    font-weight: bolder;
 }
 
 ul {
