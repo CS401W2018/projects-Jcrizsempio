@@ -42,6 +42,7 @@ main {
     background-image: url('rightlogo.png');
     background-repeat: no-repeat;
     background-position: right 50px;
+    background-size: 100px 100px;
 }
 
 ul {
