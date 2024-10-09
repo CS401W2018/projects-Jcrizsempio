@@ -1,4 +1,7 @@
 body{
+    background-image: url("bg1-removebg-preview.png");
+    background-repeat:no-repeat;
+    background-position:right;
     background-color: grey;
     font-family: monospace;
 }
