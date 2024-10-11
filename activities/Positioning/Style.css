@@ -2,16 +2,26 @@ body{
     background-repeat: no-repeat;
     background-image:url("BG.jpg")
 }
+
+main{
+    background-image: url("bg1-removebg-preview.png");
+    background-position:right;
+    background-repeat: no-repeat;
+    padding-top: 4cm;
+}
 h1{
     font-family:cursive;
     text-align: center;
     color: white;
 }
 h2{
-    padding-top: 6cm;
+    padding-top: 1cm;
     color: white;
 }
 p{
     color: white;
     text-indent: 1cm;
+}
+li{
+    color: white
 }
