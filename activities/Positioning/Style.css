@@ -1,0 +1,17 @@
+body{
+    background-repeat: no-repeat;
+    background-image:url("BG.jpg")
+}
+h1{
+    font-family:cursive;
+    text-align: center;
+    color: white;
+}
+h2{
+    padding-top: 6cm;
+    color: white;
+}
+p{
+    color: white;
+    text-indent: 1cm;
+}
