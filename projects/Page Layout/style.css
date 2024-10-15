@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #7F0909; /* Gryffindor deep red */
+    color: #EEE;
+}
+
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+    background-color: #D3A625; /* Gryffindor gold */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+header {
+    background-color: #7F0909;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header h1 span {
+    font-style: italic;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 20px 0;
+    background-color: #EEE;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #7F0909;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+
+nav ul li a:hover {
+    color: #D3A625;
+    background-color: #7F0909;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Main Content */
+main {
+    margin-top: 20px;
+}
+
+.intro h2 {
+    background-color: #FFF;
+    color: #7F0909;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 2px solid #EEE;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+main p {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #7F0909;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+}
