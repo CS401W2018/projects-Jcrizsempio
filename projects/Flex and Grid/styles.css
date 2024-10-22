@@ -42,8 +42,8 @@ main {
 }
 
 .profile-cards {
-    display: grid;
-    flex-wrap: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
