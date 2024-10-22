@@ -41,12 +41,10 @@ main {
     padding: 15px;
 }
 
-/* Updated CSS for 3x2 picture layout */
 .profile-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    grid-template-rows: repeat(2, auto); /* 2 rows */
-    gap: 15px; /* Space between cards */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .card {
@@ -54,32 +52,13 @@ main {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 15px;
+    width: calc(50% - 15px);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
     max-width: 100%;
     border-radius: 5px;
-}
-
-/* Specific placement for 5 cards */
-.card:nth-child(1) { grid-column: 1 / span 1; }
-.card:nth-child(2) { grid-column: 2 / span 1; }
-.card:nth-child(3) { grid-column: 3 / span 1; }
-.card:nth-child(4) { grid-column: 1 / span 1; }
-.card:nth-child(5) { grid-column: 2 / span 1; }
-
-/* Responsive for smaller screens */
-@media (max-width: 768px) {
-    .profile-cards {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    }
-}
-
-@media (max-width: 480px) {
-    .profile-cards {
-        grid-template-columns: 1fr; /* 1 column */
-    }
 }
 
 footer {
