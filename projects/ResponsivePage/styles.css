@@ -57,7 +57,7 @@ nav a:hover {
 }
 
 .sidebar ul {
-    list-style-type: none;
+    list-style-type: disc;
     padding: 10px;
 }
 
