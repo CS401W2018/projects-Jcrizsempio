@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="tables.css">
+</head>
+<body>
+    <header><h1>My Class Schedule</h1></header>
+    <main>
+        <table class="schedule">
+            <thead>
+                <tr>
+                    <th>Dept.</th>
+                    <th>Number</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                    <th>Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="5">Information Technology</th>
+                </tr>
+                <tr>
+                    <td>IT</td>
+                    <td>240</td>
+                    <td>11AM</td>
+                    <td>P3</td>
+                    <td rowspan="2">3</td>
+                </tr>
+                <tr>
+                    <td>IT</td>
+                    <td>240</td>
+                    <td>12PM</td>
+                    <td>P3</td>
+                </tr>
+                <tr>
+                    <th colspan="5">Computer Science</th>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>210</td>
+                    <td>2PM</td>
+                    <td>P1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>211</td>
+                    <td>12PM</td>
+                    <td>P2</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4" id="total-credits">Total Credits</th>
+                    <td headers="total-credits">12</td>
+                </tr>
+            </tfoot>
+        </table>
+        <h3>Questions:</h3>
+        <h4>Why don't we use the border property?</h4>
+            <p>We might avoid using the border property for a cleaner design, opting for padding and background colors instead. Sometimes, alternatives like box-shadow can create a more modern look. It's all about achieving the desired style and user experience!</p>
+        <h4>What is the easiest way to color every other row a different color?</h4>
+            <p>To color every other row, use the nth-child pseudo-class in CSS. For example, tr:nth-child(even) can set a background color for even rows, while tr:nth-child(odd) can set a different color for odd rows. This way, the rows alternate colors easily!</p>
+        <h4>When should we use a table?</h4>
+            <p>Only use table when you are going to present data like from excel.</p>
+    </main>
+</body>
+</html>
