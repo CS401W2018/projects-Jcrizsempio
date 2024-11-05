@@ -1,0 +1,97 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+header, nav, footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    margin-top: 20px;
+    width: 70%;
+}
+
+aside {
+    width: 20%;
+    margin-top: 20px;
+    background-color: #f3f3f3;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Flex Layout */
+body > main, body > aside {
+    display: flex;
+}
+
+main, aside {
+    order: 0;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #444;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+thead th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px;
+}
