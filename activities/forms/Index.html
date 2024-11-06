@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Netflix & Chilllax</h1>
+    </header>
+    <main>
+        <form action="processing.html" method="post">
+            First Name: <input type="text" name="first"><br>
+            Last Name: <input type="text" name="last"><br>
+            Would you like to go out with me?<br><input type="radio" name="yes">Yes <input type="radio" name="yes">Absolutely yes<br>
+            <label for="fruits">Movie Idea</label>
+                <select id="fruits" name="fruits">
+                <option value="m"></option>
+                <option value="m1">Deadpool ex ni wolvirine</option>
+                <option value="m2">69 shades of black</option>
+                <option value="m3">Meet the Mormon Moms</option>
+                <option value="m4">Godzilla x 9/11</option>
+                </select><br>
+            Password: <input type="password" name="pwd"><br>
+            <input type="date"> & <input type="time"><br>
+            Any suggestion: <br><textarea name="comment" id=""></textarea>  
+            <div class="sub"><input type="submit" name="sub" class="sub"></div>
+        </form>
+        <ol>
+            <li>
+                <h3>The form tag has an "action" attribute. What does it do?</h3>
+                <p>The `action` attribute in a 'form' tag specifies the URL where the form data should be sent when the form is submitted. It tells the browser which server or script will process the data. If left empty, the form submits to the same URL as the page containing the form.</p>
+            </li>
+            <li>
+                <h3>The form tag has a "method" attribute. What does it do?</h3>
+                <p>The `method` attribute in a 'form' tag defines how the form data will be sent to the server. The two most common methods are `GET`, which appends the data to the URL, and `POST`, which sends the data in the request body. The choice of method depends on the type of data being submitted and its sensitivity.</p>
+            </li>
+            <li>
+                <h3>What is the difference between a "POST" and a "GET"?</h3>
+                <p>GET for retrieving data and POST for submitting sensitive or large amounts of data.</p>
+            </li>
+        </ol>
+    </main>
+    <footer>
+        &copy; 2024 Jashreel Criz Sempio
+    </footer>
+</body>
+</html>
