@@ -12,8 +12,12 @@
     </header>
     <main>
         <form action="processing.html" method="post">
-            First Name: <input type="text" name="first"><br>
-            Last Name: <input type="text" name="last"><br>
+
+            <div class="form-row">
+            <label for="fname">First Name: <input type="text" name="first" placeholder="First Name"></label>
+            </div>
+
+            Last Name: <input type="text" name="last" placeholder="Last Name"><br>
             Would you like to go out with me?<br><input type="radio" name="yes">Yes <input type="radio" name="yes">Absolutely yes<br>
             <label for="fruits">Movie Idea</label>
                 <select id="fruits" name="fruits">
@@ -30,16 +34,12 @@
         </form>
         <ol>
             <li>
-                <h3>The form tag has an "action" attribute. What does it do?</h3>
-                <p>The `action` attribute in a 'form' tag specifies the URL where the form data should be sent when the form is submitted. It tells the browser which server or script will process the data. If left empty, the form submits to the same URL as the page containing the form.</p>
+                <h3>What are different ways to style your form?</h3>
+                <p></p>
             </li>
             <li>
-                <h3>The form tag has a "method" attribute. What does it do?</h3>
-                <p>The `method` attribute in a 'form' tag defines how the form data will be sent to the server. The two most common methods are `GET`, which appends the data to the URL, and `POST`, which sends the data in the request body. The choice of method depends on the type of data being submitted and its sensitivity.</p>
-            </li>
-            <li>
-                <h3>What is the difference between a "POST" and a "GET"?</h3>
-                <p>GET for retrieving data and POST for submitting sensitive or large amounts of data.</p>
+                <h3>Why does the professor like to use flex?</h3>
+                <p></p>
             </li>
         </ol>
     </main>
