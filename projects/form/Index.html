@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix & Chilllax</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Netflix & Chilllax</h1>
+    </header>
+
+    <main>
+        <form action="processing.html" method="post">
+            <fieldset>
+                <legend>Let's Plan a Movie Night!</legend>
+
+                <!-- First Name (Text Box) -->
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="first" required><br>
+
+                <!-- Last Name (Text Box) -->
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="last" required><br>
+
+                <!-- Movie Choice (Select Box) -->
+                <label for="movieChoice">Movie Idea:</label>
+                <select id="movieChoice" name="movie" required>
+                    <option value="">Choose a movie</option>
+                    <option value="deadpool">Deadpool</option>
+                    <option value="coloringBook">69 Shades of Coloring Book</option>
+                    <option value="mormon">Meet the Mormon</option>
+                    <option value="godzilla">Godzilla</option>
+                </select><br>
+
+                <!-- Going Out (Radio Buttons) -->
+                <p>Would you like to go out with me?</p>
+                <label>
+                    <input type="radio" name="goOut" value="yes"> Yes
+                </label>
+                <label>
+                    <input type="radio" name="goOut" value="absolutely"> Absolutely yes
+                </label><br>
+
+                <!-- Password Field -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="pwd" required><br>
+
+                <!-- Suggestion (Textarea) -->
+                <label for="suggestion">Any suggestion:</label>
+                <textarea id="suggestion" name="comment" rows="4" required></textarea><br>
+
+                <!-- Additional Fields (HTML5 Date and Email) -->
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="preferredDate"><br>
+
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="preferredTime"><br>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <!-- Terms (Checkbox) -->
+                <label>
+                    <input type="checkbox" name="agreeTerms" required> I agree to the terms and conditions
+                </label><br>
+
+                <!-- Submit Button -->
+                <div class="sub">
+                    <input type="submit" value="Submit" class="submitBtn">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        &copy; 2024 Jashreel Criz Sempio
+    </footer>
+</body>
+</html>
