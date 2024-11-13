@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processing Form Submission</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Form Submission Results</h1>
+    </header>
+
+    <main>
+        <h2>Your Submitted Data</h2>
+        <div class="form-results">
+            <p><strong>First Name:</strong> <span id="first-name"></span></p>
+            <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+            <p><strong>Movie Idea:</strong> <span id="movie-idea"></span></p>
+            <p><strong>Would you like to go out with me?</strong> <span id="response"></span></p>
+            <p><strong>Password:</strong> <span id="password"></span></p>
+            <p><strong>Appointment Date:</strong> <span id="appointment-date"></span></p>
+            <p><strong>Appointment Time:</strong> <span id="appointment-time"></span></p>
+            <p><strong>Suggestions:</strong> <span id="suggestions"></span></p>
+        </div>
+
+        <button onclick="goBack()">Go Back</button>
+    </main>
+
+    <footer>
+        &copy; 2024 Jashreel Criz Sempio
+    </footer>
+
+    <script>
+        // Function to get query parameters and display them
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Populate the fields with data from URL
+        document.getElementById('first-name').textContent = getQueryParam('first') || 'Not Provided';
+        document.getElementById('last-name').textContent = getQueryParam('last') || 'Not Provided';
+        document.getElementById('movie-idea').textContent = getQueryParam('fruits') || 'Not Provided';
+        document.getElementById('response').textContent = getQueryParam('yes') || 'Not Answered';
+        document.getElementById('password').textContent = getQueryParam('pwd') || 'Not Provided';
+        document.getElementById('appointment-date').textContent = getQueryParam('date') || 'Not Provided';
+        document.getElementById('appointment-time').textContent = getQueryParam('time') || 'Not Provided';
+        document.getElementById('suggestions').textContent = getQueryParam('comment') || 'Not Provided';
+
+        // Go back to the form
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

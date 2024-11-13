@@ -11,38 +11,66 @@
         <h1>Netflix & Chilllax</h1>
     </header>
     <main>
-        <form action="processing.html" method="post">
+        <form action="processing.html" method="get">
             <fieldset>
                 <legend>Date Appointment</legend>
                 <div class="form-row">
-                <label for="fname">First Name: <input type="text" name="first" placeholder="First Name"></label>
+                    <label for="fname">First Name: 
+                        <input type="text" name="first" placeholder="First Name">
+                    </label>
                 </div>
                 <div class="form-row">
-                <label for="lname">Last Name: <input type="text" name="last" placeholder="Last Name"></label><br>
+                    <label for="lname">Last Name: 
+                        <input type="text" name="last" placeholder="Last Name">
+                    </label><br>
                 </div>
-                Would you like to go out with me?<br><input type="radio" name="yes">Yes <input type="radio" name="yes">Absolutely yes<br>
+
+                <p>Would you like to go out with me?</p>
+                <input type="radio" name="yes" value="Yes"> Yes
+                <input type="radio" name="yes" value="Absolutely yes"> Absolutely yes<br>
+
                 <label for="fruits">Movie Idea</label>
-                    <select id="fruits" name="fruits">
+                <select id="fruits" name="fruits">
                     <option value="m"></option>
-                    <option value="m1">Deadpools</option>
-                    <option value="m2">69 shades of coloring book</option>
-                    <option value="m3">Meet the Mormon </option>
+                    <option value="m1">Deadpool</option>
+                    <option value="m2">69 Shades of Coloring Book</option>
+                    <option value="m3">Meet the Mormon</option>
                     <option value="m4">Godzilla</option>
-                    </select><br>
-                Password: <input type="password" name="pwd"><br>
-                <input type="date"> & <input type="time"><br>
-                Any suggestion: <br><textarea name="comment" id=""></textarea>  
-                <div class="sub"><input type="submit" name="sub" class="sub"></div>
-            </fieldset> 
+                </select><br>
+
+                <label for="pwd">Password:</label>
+                <input type="password" name="pwd"><br>
+
+                <label for="date">Appointment Date:</label>
+                <input type="date" name="date">
+                
+                <label for="time">Appointment Time:</label>
+                <input type="time" name="time"><br>
+
+                <label for="comment">Any Suggestions:</label>
+                <textarea name="comment" id="comment"></textarea><br>
+
+                <div class="sub">
+                    <input type="submit" name="sub" class="sub">
+                </div>
+            </fieldset>
         </form>
         <ol>
             <li>
-                <h3>What are different ways to style your form?</h3>
-                <p>To style a form, you can focus on elements like input fields, buttons, and labels by applying borders, padding, and hover effects for interactivity. Enhance layout with spacing, background colors, and responsive design, while using validation styles to show error or success states. Additionally, consider form structure with fieldsets and legends for grouping related elements, improving both visual clarity and accessibility.</p>
+                <h3>What is JavaScript? How did it get its name?</h3>
+                <p>JavaScript is a high-level programming language primarily used to create interactive and dynamic content on websites.It was named to capitalize on the popularity of Java.</p>
+                </li>
+                <li>
+                <h3>What are the two ways you can run JavaScript?</h3>
+                <p>Two ways we can run java is through the browser & the server like Node.js</p>
             </li>
             <li>
-                <h3>Why does the professor like to use flex?</h3>
-                <p>Professors like to use Flexbox because it provides an easy, efficient way to create flexible, responsive layouts with simple alignment and distribution of elements, reducing the need for complex CSS techniques. It simplifies tasks like centering content and managing spacing in a container.</p>
+                <h3>What was the most popular front-end js library?</h3>
+                <p>The most popular front-end JavaScript library in recent years has been React. </p>
+            </li>
+            <li>
+                <h3>What is the most popular front-end js library today?</h3>
+                <p>The most popular front-end JavaScript library is JQuerry.</p>
             </li>
         </ol>
     </main>
