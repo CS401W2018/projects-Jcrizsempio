@@ -11,7 +11,7 @@
         <h1>Netflix & Chilllax</h1>
     </header>
     <main>
-        <form action="processing.html" method="get">
+        <form action="processing.html" method="get" id="myform">
             <fieldset>
                 <legend>Date Appointment</legend>
                 <div class="form-row">
@@ -77,5 +77,11 @@
     <footer>
         &copy; 2024 Jashreel Criz Sempio
     </footer>
+    <script>
+        document.getElementById('myform').addEventListener('submit',function(event){
+            event.preventDefault();
+            alert("You submitted a form")
+        })
+    </script>
 </body>
 </html>
