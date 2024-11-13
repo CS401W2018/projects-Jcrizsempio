@@ -14,7 +14,6 @@
     <main>
         <h2>Here’s the information you submitted:</h2>
         <div id="formData">
-            <!-- This is where the submitted form data will be displayed -->
         </div>
     </main>
 
@@ -23,10 +22,10 @@
     </footer>
 
     <script>
-        // Get form data from URL parameters (assuming the form uses GET method)
+
         const params = new URLSearchParams(window.location.search);
         
-        // Get each parameter from the URL and display it
+
         const formDataDiv = document.getElementById('formData');
         const firstName = params.get('first');
         const lastName = params.get('last');
@@ -39,7 +38,6 @@
         const email = params.get('email');
         const agreeTerms = params.get('agreeTerms');
 
-        // Format the display
         formDataDiv.innerHTML = `
             <p><strong>First Name:</strong> ${firstName}</p>
             <p><strong>Last Name:</strong> ${lastName}</p>
