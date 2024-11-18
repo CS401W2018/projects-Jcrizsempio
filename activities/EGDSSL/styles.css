@@ -1,0 +1,22 @@
+body{
+    background-color:blanchedalmond;
+}
+header{
+    text-align: center;
+}
+fieldset{
+    box-shadow: 3px 3px 3px rgba(20,20,20,0.5);
+    background-color:bisque;
+}
+legend{
+    border: thin solid black;
+}
+.form-row{
+    display: flex;
+}
+.form-row label{
+    width: 150px;
+}
+.sub{
+    text-align: center;
+}
