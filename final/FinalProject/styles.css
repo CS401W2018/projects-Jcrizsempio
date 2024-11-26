@@ -2,29 +2,46 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f5f5f5;
+    color: #0C2340;
+    background-image: url('images/wood-texture.jpg');
+    background-size: cover;
 }
 
 nav {
-    background-color: #2c3e50;
+    background-color: #BA0C2F;
     color: white;
     display: flex;
     justify-content: space-around;
     padding: 10px;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #FDB927;
+    border-radius: 5px;
 }
 
 nav a.current {
-    background-color: #e67e22;
+    background-color: #0C2340;
     border-radius: 5px;
 }
 
 .content {
     padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #BA0C2F;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 img {
@@ -32,30 +49,40 @@ img {
     height: auto;
     display: block;
     margin: 20px 0;
+    border: 5px solid #FDB927;
+    border-radius: 5px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
+    background-color: white;
+    border: 2px solid #BA0C2F;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 table, th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #0C2340;
 }
 
 th, td {
     padding: 10px;
-    text-align: left;
+    text-align: center;
+    font-family: 'Trade Gothic', sans-serif;
+    font-size: 1em;
 }
 
 thead {
-    background-color: #f4f4f4;
+    background-color: #BA0C2F;
+    color: white;
 }
 
 caption {
     font-weight: bold;
     margin-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5em;
 }
 
 @media (max-width: 768px) {
@@ -63,9 +90,10 @@ caption {
         flex-direction: column;
         align-items: center;
     }
+
     nav a {
         display: block;
         margin: 5px 0;
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 }
