@@ -66,6 +66,9 @@ header h1 {
     border: 5px solid #FDB927;
     margin-top: 20px;
 }
+.hero-image{
+    size: 100cm;
+}
 
 .highlights {
     padding: 20px;
