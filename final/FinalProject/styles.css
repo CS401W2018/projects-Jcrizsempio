@@ -52,6 +52,10 @@ img {
     border: 5px solid #FDB927;
     border-radius: 5px;
 }
+.hero-image{
+    max-width: 100%;
+    max-height: 50%;
+}
 
 table {
     width: 50%;
