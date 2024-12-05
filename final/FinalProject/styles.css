@@ -190,6 +190,9 @@ ul {
 
 
 form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border: 2px solid #BA0C2F;
@@ -199,29 +202,11 @@ form {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-form label {
-    font-weight: bold;
-    color: #0C2340;
-}
 
 input[type="radio"] {
     margin-right: 10px;
 }
 
-input[type="submit"] {
-    background-color: #BA0C2F;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.2em;
-}
-
-input[type="submit"]:hover {
-    background-color: #FDB927;
-}
 
 @media (max-width: 768px) {
     nav {
@@ -233,5 +218,84 @@ input[type="submit"]:hover {
         display: block;
         margin: 5px 0;
         font-size: 1.5em;
+    }
+}
+
+fieldset {
+    border: 2px solid white; 
+    border-radius: 8px;
+    padding: 15px;
+}
+
+legend {
+    color: #3a403d;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0 10px;
+    background-color: #f6f1eb;
+}
+
+label {
+    font-weight: bold;
+    color: #0C2340;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 2px solid #FDB927; 
+    border-radius: 5px;
+    background-color: #ffffff; 
+    color: #3a403d;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 8px;
+}
+
+.submitBtn {
+    background-color: #BA0C2F; 
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+    background-color: #FDB927; 
+}
+
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+    }
+
+    label {
+        margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea,
+    .submitBtn {
+        width: 100%;
+    }
+    
+    .submitBtn {
+        padding: 15px;
+        font-size: 1.1em;
     }
 }
