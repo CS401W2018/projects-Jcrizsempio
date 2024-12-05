@@ -6,22 +6,6 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <script>
-        function validateForm() {
-            var name = document.getElementById("name").value;
-            var email = document.getElementById("email").value;
-            var comments = document.getElementById("comments").value;
-
-            if (name == "" || email == "" || comments == "") {
-                alert("All fields must be filled out!");
-                return false;
-            } else {
-                alert("Form submitted successfully!");
-                document.getElementById("contactForm").reset();
-                return false;
-            }
-        }
-    </script>
 </head>
 <body>
     <nav>
@@ -34,9 +18,9 @@
         <a href="contact.html" class="current">Contact</a>
     </nav>
     <main>
-        <form action="submit.html" method="get" novalidate>
+        <form id="contactForm">
             <fieldset>
-                <legend>Get in Touch</legend>
+                <legend>Get in Touch with Us</legend>
 
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br>
@@ -68,5 +52,7 @@
     <footer>
         &copy; 2024 Jashreel Criz Sempio
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

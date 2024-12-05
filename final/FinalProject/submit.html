@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Form Submission Data</h1>
+    </header>
+
+    <main>
+        <h2>Here’s the information you submitted:</h2>
+        <div id="formData">
+            <!-- Form data will be inserted here by JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2024 Jashreel Criz Sempio
+    </footer>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        const formDataDiv = document.getElementById('formData');
+        const name = params.get('name');
+        const email = params.get('email');
+        const movieChoice = params.get('movie');
+        const player = params.get('player');
+        const comments = params.get('comments');
+        const agreeTerms = params.get('agreeTerms');
+
+        formDataDiv.innerHTML = `
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Movie Choice:</strong> ${movieChoice}</p>
+            <p><strong>G.O.A.T. Player:</strong> ${player}</p>
+            <p><strong>Comments:</strong> ${comments}</p>
+            <p><strong>Agreed to Terms:</strong> ${agreeTerms ? 'Yes' : 'No'}</p>
+        `;
+    </script>
+</body>
+</html>
