@@ -8,17 +8,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <script>
         function validateForm() {
-            var name = document.getElementById("name").value;
-            var email = document.getElementById("email").value;
-            var comments = document.getElementById("comments").value;
-            if (name == "" || email == "" || comments == "") {
-                alert("All fields must be filled out!");
-                return false;
-            } else {
-                alert("Form submitted successfully!");
-                return true;
-            }
-        }
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var comments = document.getElementById("comments").value;
+
+    if (name == "" || email == "" || comments == "") {
+        alert("All fields must be filled out!");
+        return false;
+    } else {
+        alert("Form submitted successfully!");
+        // Optionally, you can clear the form fields
+        document.getElementById("contactForm").reset();
+        return false; // Prevent form from submitting to a new page
+    }
+}
+
     </script>
 </head>
 <body>
