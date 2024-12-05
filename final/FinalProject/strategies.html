@@ -8,23 +8,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <script>
         function checkAnswers(event) {
-            event.preventDefault();  // Prevent form from submitting and reloading the page
+            event.preventDefault(); 
 
             var score = 0;
 
-            // Check question 1
             var question1Answer = document.querySelector('input[name="question1"]:checked');
             if (question1Answer && question1Answer.value === "option1") {
                 score++;
             }
 
-            // Check question 2
             var question2Answer = document.querySelector('input[name="question2"]:checked');
             if (question2Answer && question2Answer.value === "option2") {
                 score++;
             }
 
-            // Provide feedback
             if (score === 2) {
                 alert("You got it correct! Great job.");
             } else {
