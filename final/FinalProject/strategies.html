@@ -6,6 +6,32 @@
     <title>Basketball Strategies</title>
     <link rel="stylesheet" href="styles.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script>
+        function checkAnswers(event) {
+            event.preventDefault();  // Prevent form from submitting and reloading the page
+
+            var score = 0;
+
+            // Check question 1
+            var question1Answer = document.querySelector('input[name="question1"]:checked');
+            if (question1Answer && question1Answer.value === "option1") {
+                score++;
+            }
+
+            // Check question 2
+            var question2Answer = document.querySelector('input[name="question2"]:checked');
+            if (question2Answer && question2Answer.value === "option2") {
+                score++;
+            }
+
+            // Provide feedback
+            if (score === 2) {
+                alert("You got it correct! Great job.");
+            } else {
+                alert("Oops, that's not correct. Try again.");
+            }
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -32,7 +58,6 @@
                 <li><strong>Zone Defense:</strong> Defenders guard areas of the court instead of specific players.</li>
             </ul>
             
-            <!-- New Section: Roles -->
             <h2>Player Roles and Their Impact</h2>
             <p>Understanding player positions can enhance strategic decision-making:</p>
             <ul>
@@ -41,12 +66,10 @@
                 <li><strong>Center:</strong> A key player near the basket, often responsible for rebounds.</li>
             </ul>
 
-            <!-- Video Section -->
             <h2>Classic Basketball Plays</h2>
             <p>Watch these iconic plays to see strategies in action:</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/oyjYgmsM00Q?si=SQ9sgLLPGhdFSq24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-            <!-- Table Section -->
             <h2>Player Statistics</h2>
             <table>
                 <caption>Legendary NBA Players and Their Records</caption>
@@ -93,10 +116,9 @@
             <h3>See more</h3>
                 <a href="https://www.statmuse.com/nba">Learn More of the Players Statistics</a>
 
-            <!-- Interactive Quiz -->
             <h2>Test Your Knowledge</h2>
             <p>Think you know your basketball strategies? Take this quiz:</p>
-            <form>
+            <form onsubmit="checkAnswers(event)">
                 <label for="question1">1. What is a pick-and-roll?</label><br>
                 <input type="radio" name="question1" value="option1"> An offensive play involving screens<br>
                 <input type="radio" name="question1" value="option2"> A type of dribble move<br><br>
