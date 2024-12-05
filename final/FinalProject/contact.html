@@ -6,6 +6,20 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles.css">    
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var comments = document.getElementById("comments").value;
+            if (name == "" || email == "" || comments == "") {
+                alert("All fields must be filled out!");
+                return false;
+            } else {
+                alert("Form submitted successfully!");
+                return true;
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -21,7 +35,7 @@
     <main>
     <div class="content">
         <h2>Contact Us</h2>
-        <form action="process_form.html" method="post">
+        <form action="process_form.html" method="post" onsubmit="return validateForm()">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br>
             <label for="email">Email:</label>
@@ -30,7 +44,7 @@
             <select id="player" name="player">
                 <option value="Jordan">Michael Jordan</option>
                 <option value="LeBron">LeBron James</option>
-                <option value="Harden">James Harden</option>
+                <option value="Bryant">Kobe Bryant</option>
             </select><br>
             <label for="comments">Comments:</label><br>
             <textarea id="comments" name="comments" rows="4"></textarea><br>
