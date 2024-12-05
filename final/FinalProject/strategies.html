@@ -116,19 +116,24 @@
             <h3>See more</h3>
                 <a href="https://www.statmuse.com/nba">Learn More of the Players Statistics</a>
 
-            <h2>Test Your Knowledge</h2>
-            <p>Think you know your basketball strategies? Take this quiz:</p>
-            <form onsubmit="checkAnswers(event)">
-                <label for="question1">1. What is a pick-and-roll?</label><br>
-                <input type="radio" name="question1" value="option1"> An offensive play involving screens<br>
-                <input type="radio" name="question1" value="option2"> A type of dribble move<br><br>
-
-                <label for="question2">2. What is zone defense?</label><br>
-                <input type="radio" name="question2" value="option1"> Defending a specific player<br>
-                <input type="radio" name="question2" value="option2"> Defending an area of the court<br><br>
-
-                <input type="submit" value="Submit Quiz">
-            </form>
+                <h2>Test Your Knowledge</h2>
+                <p>Think you know your basketball strategies? Take this quiz:</p>
+                <form onsubmit="checkAnswers(event)" class="quiz">
+                    <div>
+                        <label for="question1">1. What is a pick-and-roll?</label><br>
+                        <input type="radio" name="question1" value="option1"> An offensive play involving screens<br>
+                        <input type="radio" name="question1" value="option2"> A type of dribble move<br>
+                    </div>
+                
+                    <div>
+                        <label for="question2">2. What is zone defense?</label><br>
+                        <input type="radio" name="question2" value="option1"> Defending a specific player<br>
+                        <input type="radio" name="question2" value="option2"> Defending an area of the court<br>
+                    </div>
+                
+                    <input type="submit" value="Submit Quiz">
+                </form>
+                
         </div>
     </main>
 
