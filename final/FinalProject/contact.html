@@ -6,6 +6,21 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles.css">    
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var comments = document.getElementById("comments").value;
+    
+            if (name == "" || email == "" || comments == "") {
+                alert("All fields must be filled out!");
+                return false;
+            }
+            return true;
+        }
+    </script>
+    
 </head>
 <body>
     <header>
